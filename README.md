@@ -69,8 +69,6 @@ All three cards have different shapes, different colors, different numbers of sy
 
 #### Freeplay
 
-**IMAGE**
-
 Freeplay is a single player game mode that allows the user to find sets at thier own pace without the stress of competing against another player. The score and cards remaining in the deck are displayed on the top left. A timer is on the bottom right which will be displayed on the victory screen to inform the user how long it took them to find all the sets in the deck. 
 
 Clicking the **Reveal** button will outine in yellow one of the sets on the board. Repeatedly clicking this button will cycle through all sets on the board. The number displayed directly to the right is how many sets are on the current board.
@@ -111,6 +109,22 @@ If there is any change to the game state, the next frame will display these chan
 2. Creating the Cards
 
 While the images were created in Adobe Illustrator, a python class was also created storing the attributes for each card. Each object had a `image`, `shape`, `number_of_shapes`, `color`, and `shading` property. These 81 cards were then put into an array named `deck` which was pulled from at random during the game. 
+
+```
+class Card:
+    image = None
+    shape = int
+    number_of_shapes = int
+    color = int
+    shading = int
+
+    def __init__(self, image, shape, number_of_shapes, color, shading):
+        self.image = pygame.transform.scale(image, (141, 215))
+        self.shape = shape
+        self.number_of_shapes = number_of_shapes
+        self.color = color
+        self.shading = shading
+```
 
 3. Checking a Set
 
