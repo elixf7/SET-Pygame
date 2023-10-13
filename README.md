@@ -1,6 +1,6 @@
 # SET-Pygame
 
-**INSERT VIDEO OF CARD GAME**
+![My Image](README-Assets/freeplay.png)
 Recreated the popular card game SET using the pygame library.
 
 
@@ -25,7 +25,7 @@ Below I will explain the basics of how to play SET directly from the [official i
 The object of the game is to identify a SET of 3 cards from 12 cards placed face up on the table. Each card has four features, which can vary as follows:
 
 
-**IMAGE**
+![My Image](README-Assets/overall.png)
 
 A SET consists of 3 cards in which each of the cards’ features, looked at one‐by‐one, are the same on each card, or, are different on each card. All of the features must separately satisfy this rule. In other words: shape must be either the same on all 3 cards, or different on each of the 3 cards; color must be either the same on all 3 cards, or different on each of the 3, etc. See EXAMPLES below.
 
@@ -51,16 +51,16 @@ When playing solitaire, if the player does not find a SET, 3 more cards are laid
 **EXAMPLES**
 For example, the following are SETs:
 
-**IMAGE**
+![My Image](README-Assets/number.png)
 
 
 All three cards have the same shape, the same color, the same number of symbols and they all have different shading.
 
-**IMAGE**
+![My Image](README-Assets/shading.png)
 
 All three cards have different shapes, different colors, and different numbers of symbols and they all have the same shading.
 
-**IMAGE**
+![My Image](README-Assets/different.png)
 
 All three cards have different shapes, different colors, different numbers of symbols and different shadings.
 
